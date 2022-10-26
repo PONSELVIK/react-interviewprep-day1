@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day1</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div>
+        <p>1. WHAT IS VIRTUAL DOM</p>
+       <p>
+        Virutual Dom [VDOM] is an in-memory representation of real Dom.The representation of UI is kept in memory
+        and synced with Real dom. Its a step between the render function is being called and displaying element on the screen.
+        this entire process is called reconcilation.
+       </p> 
+       <p>2.What is SPA</p>
+       <P>
+        Single Page Application: Any web application when we click the button or when we try to select any tabs in navbar
+        then the browser page will get reloading that is known as Multi page-application.instead of any changes without reloading 
+        the page is known as single-page-application. it is not taking loading time, faster than MPA. <br>
+        when we create a  react application using CRA [create-react-app appname]then its an single page application.
+
+       </P>
+       <p>3.DIFFERNCE BETWEEN CLASS AND FUNCIONAL COMPONENT</p>
+       <p>
+        FUNCTIONAL COMPONENT: <br>
+        <ul>
+            <li>It is like a plain javascript function which passed props as arguments and return react element.</li>
+            <li>there is no render menthod.</li>
+            <li>also known as stateless component which accept data and display some form, mainly used for rendering UI</li>
+            <li>Life cycle method not used in functional component.[eg componentDidMount]</li>
+            <li>constructor is not used in functioal component</li>
+            <li>Hooks are simply used to make them statefull.</li>
+        </ul>
+        <p>CLASS COMPONENT</p>
+        <ul>
+            <li>It requires render from React.Component and create a render function and returns react element</li>
+            <li>must have render()method returning jsx</li>
+            <li>also known as statefull component.</li>
+            <li>constructor is used to store state</li>
+            <li>life cycle method is used in class component.</li>
+            </ul>
+       </p>
+       <p>4.WHAT DO YOU MEAN BY STATE AND ITS USE IN REACT</p>
+       <P>
+        State is an object hold some information may change over the lifetime of the component. state is always try to make simple.
+        <pre>
+            class comp extends React.Component{
+                constructor(props){
+                    super(props)
+
+                    this.state ={
+                        message : "react"
+                    }
+                }
+                render(){
+                    return(
+                        div>
+                            h1>{this.state.message}/h1>
+                        /div>
+                )
+                }
+            }
+        </pre>
+        state is used for internal communication inside react component <br>
+        state is similar to props but it is private and fully accessed by component.other component can not use without any access.
+       </P>
+
+       <p>5.WHAT IS JSX WHY WE USE INSTEAD OF JS?</p>
+       <p>
+        JSX is a javascript XML. it is used to write html in react. <br>
+        jsx makes the code easier to write html in react. <br>
+        jsx allow us to write HTML in javascript and place them indom without any CreateElement()or appendChild() <br>
+        jsx converts html tags in react elements 
+    </p>
+    <p>6.WHAT IS PACKAGE.JSON?</p>
+    <P>
+        It contain the information about the project and the libraries which using inthe project and has contain the description of the 
+        commands which is run test and build the projects.
+    </P>
+    </div>
+
+</body>
+</html>
